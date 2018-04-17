@@ -9,6 +9,8 @@
       <p>
         <small>{{resume.profile.city}}</small>
         <small>{{resume.profile.birthday}}</small>
+        <small>{{resume.profile.sex}}</small>
+        <small>{{resume.profile.marray}}</small>
       </p>
     </section>
 
@@ -17,7 +19,9 @@
       <ol>
         <li v-for="item in resume.projects">
           <h3>{{item.name}}</h3>
-          <p v-show="item.content"> {{item.content}} </p>
+          <small>{{item.role}}</small>
+          <small>{{item.ptime}}</small>
+          <small> {{item.job}} </small>
         </li>
       </ol>
     </section>
@@ -27,7 +31,8 @@
       <ol>
         <li v-for="item in resume.workHistory">
           <h3>{{item.company}}</h3>
-          <p v-show="item.content"> {{item.content}} </p>
+          <small>{{item.details}}</small>
+          <small>{{item.worktime}}</small>
         </li>
       </ol>
     </section>
@@ -36,9 +41,10 @@
       <h2>毕业院校</h2>
       <ol>
         <li v-for="item in resume.education">
-          <h3>{{item.school}}
-            <span v-show="item.content"> - {{item.content}} </span>
-          </h3>
+          <h3>{{item.school}}</h3>
+          <small>{{item.details}}</small>
+          <small>{{item.studytime}}</small>
+          <small>{{item.schooldesc}}</small>
         </li>
       </ol>
     </section>
@@ -48,7 +54,6 @@
       <ol>
         <li v-for="item in resume.awards">
           <h3>{{item.name}}</h3>
-          <p v-show="item.content"> {{item.content}} </p>
         </li>
       </ol>
     </section>
@@ -56,9 +61,11 @@
     <section data-name="contacts" v-show="resume.contacts">
       <h2>联系方式</h2>
       <table>
-        <tr v-for="item in resume.contacts">
-          <td>{{item.contact}}</td>
-          <td v-show="item.content"> {{item.content}} </td>
+        <tr>
+          <td>电话:{{resume.contacts.tel}}</td>
+          <td>QQ:{{resume.contacts.qq}}</td>
+          <td>微信:{{resume.contacts.wechat}}</td>
+          <td>邮箱:{{resume.contacts.mail}}</td>
         </tr>
       </table>
     </section>

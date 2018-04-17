@@ -1,7 +1,7 @@
 <template>
     <div id="topbar">
       <div class="wrapper">
-        <span class="logo">Helper</span>
+        <span class="logo">Resumer</span>
         <div class="actions">
           <button class="primary">保存</button>
           <button>预览</button>
