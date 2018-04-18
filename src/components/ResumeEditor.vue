@@ -67,7 +67,7 @@
       usb(aaa,bbb){
         this.$store.commit('fuck',aaa,bbb)
       }
-    }  
+    }
   }
 </script>
 
@@ -78,6 +78,7 @@
     display: flex;
     flex-direction: row;
     overflow: auto;
+    width:30vw;
     > nav{
       width: 80px;
       background: black;

@@ -48,7 +48,7 @@ export default new Vuex.Store({
         details:'前端工程师',
       }
        ],
-      education: [{'studytime':'2014.9-2018-7','school':'杭州银美科技有限公司','details':'自动化',
+      education: [{'studytime':'2014.9-2018-7','school':'长春理工大学光电信息学院','details':'自动化',
       'schooldesc':'2014届本科，担任南邮爱心社办公室副部长，负责新闻稿、横幅撰写工作，多次参加义工活动，照顾孤寡老人。'}
       ],
       projects: [
@@ -57,7 +57,7 @@ export default new Vuex.Store({
       awards: [{name:'社区福利彩票五等奖'},{name:'康师傅冰红茶再来一瓶'},{name:'时代周刊封面人物'}
       ],
       contacts:
-        { tel: '18758251784', qq: '315810842',wechat:'马老师',mail:'315810842' },
+        { tel: '18758251784', qq: '315810842',wechat:'小钢',mail:'315810842@qq.com' },
     }
   },
   mutations: {
